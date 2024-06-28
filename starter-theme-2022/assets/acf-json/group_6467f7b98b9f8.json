@@ -1,0 +1,272 @@
+{
+    "key": "group_6467f7b98b9f8",
+    "title": "Footer",
+    "fields": [
+        {
+            "key": "field_6467f7b99be64",
+            "label": "",
+            "name": "footer_options",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_6467f7b99eb74",
+                    "label": "Footer colors",
+                    "name": "color",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "light": "Dark text on white",
+                        "light-variant": "Dark text on light gray",
+                        "dark": "White text on black",
+                        "dark-variant": "White text on dark gray",
+                        "highlight": "White text on burgundy"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6467f7b99ebdf",
+                    "label": "Footer logo",
+                    "name": "logo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6467f7b99ebc3",
+                    "label": "Footer layout",
+                    "name": "layout",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "logo-left": "Logo left",
+                        "logo-center": "Centered",
+                        "logo-right": "Logo right"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_646810fc7792a",
+                    "label": "Include social links?",
+                    "name": "social_links",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "true": "Yes",
+                        "false": "No"
+                    },
+                    "default_value": "false",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_64680f6f77929",
+                    "label": "Mobile footer breakpoint width",
+                    "name": "footer_mobile_width",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Width at which footer links switch from vertically stacked list to horizontal layout",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "37.5em": "600px (narrow)",
+                        "46.875em": "750px (regular)",
+                        "56.25em": "900px (wide)",
+                        "-1": "Never",
+                        "custom": "Custom"
+                    },
+                    "default_value": -1,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_64680f6a77928",
+                    "label": "Custom mobile width",
+                    "name": "footer_custom_mobile_width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Enter size in px - it will be converted to ems in the backend",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_64680f6f77929",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "px"
+                },
+                {
+                    "key": "field_6467f7b99ebcc",
+                    "label": "Desktop footer breakpoint width",
+                    "name": "footer_desktop_width",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "Width at which footer layout switches from stacked mobile layout to wider desktop layout",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6467f7b99ebc3",
+                                "operator": "!=",
+                                "value": "logo-center"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "37.5em": "600px (narrow)",
+                        "56.25em": "900px (regular)",
+                        "-1": "Never",
+                        "custom": "Custom"
+                    },
+                    "default_value": -1,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6467f7b99ebd5",
+                    "label": "Custom desktop width",
+                    "name": "footer_custom_desktop_width",
+                    "aria-label": "",
+                    "type": "number",
+                    "instructions": "Enter size in px - it will be converted to ems in the backend",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6467f7b99ebcc",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "min": "",
+                    "max": "",
+                    "placeholder": "",
+                    "step": "",
+                    "prepend": "",
+                    "append": "px"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684958640
+}

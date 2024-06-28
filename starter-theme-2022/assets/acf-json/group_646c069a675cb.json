@@ -1,0 +1,103 @@
+{
+    "key": "group_646c069a675cb",
+    "title": "Social links",
+    "fields": [
+        {
+            "key": "field_646c069ad79b9",
+            "label": "",
+            "name": "social_links",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_646c06b1d79ba",
+                    "label": "Social type",
+                    "name": "type",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "instagram": "Instagram",
+                        "spotify": "Spotify",
+                        "twitter": "Twitter",
+                        "pinterest": "Pinterest",
+                        "tiktok": "TikTok",
+                        "youtube": "YouTube",
+                        "vimeo": "Vimeo"
+                    },
+                    "default_value": false,
+                    "return_format": "array",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_646c069ad79b9"
+                },
+                {
+                    "key": "field_646c0b09d79bb",
+                    "label": "Full URL",
+                    "name": "url",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Enter full URL, including \"https:\/\/\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_646c069ad79b9"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684883732
+}

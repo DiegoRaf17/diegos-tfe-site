@@ -1,0 +1,45 @@
+{
+    "key": "group_62a26c887e76d",
+    "title": "General settings",
+    "fields": [
+        {
+            "key": "field_645c1d3c8f930",
+            "label": "Site Colors",
+            "name": "theme_colors",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Add color options as key-value pairs described by background color, each on a separate line, styled like a select field: \r\n\"class-name : Display Name\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1684191610
+}

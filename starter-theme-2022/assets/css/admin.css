@@ -1,0 +1,47 @@
+/* Add admin icon */
+.menu-icon-wines .dashicons-before::before, 
+.menu-icon-cocktails .dashicons-before::before, 
+.menu-icon-flavors .dashicons-before::before, 
+.menu-icon-recipes .dashicons-before::before,
+.menu-icon-whiskeys .dashicons-before::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.menu-icon-wines .dashicons-before::before {
+  content: "\f4e3"; /* wine glass */
+}
+.menu-icon-cocktails .dashicons-before::before {
+  content: "\f561"; /* martini glass */
+}
+.menu-icon-flavors .dashicons-before::before {
+  content: "\f094"; /* lemon */
+}
+.menu-icon-recipes .dashicons-before::before {
+  content: "\f2e7"; /* knife and fork */
+}
+.menu-icon-whiskeys .dashicons-before::before {
+  content: "\f72f"; /* bottle */
+}
+
+/* reduce height of wysiwyg fields in acf admin */
+.acf-field-wysiwyg.reduce-height textarea {
+  height: 10em !important;
+}
+.reduce-height.acf-field-wysiwyg iframe {
+  height: 10em !important;
+  min-height: unset;
+}
+.acf-field-wysiwyg.reduce-height-extra textarea {
+  height: 5em !important;
+}
+.reduce-height-extra.acf-field-wysiwyg iframe {
+  height: 5em !important;
+  min-height: unset;
+}
+/* allow reduced-width acf fields to clear */
+.acf-field[data-width].clear-left {clear:left;}
+.acf-field[data-width].clear-right{clear:right;}
+.acf-field[data-width].clear-both {
+  clear:both;
+}
