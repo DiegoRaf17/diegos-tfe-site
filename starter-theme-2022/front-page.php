@@ -17,7 +17,7 @@
       <h2><?php echo $my_field; ?></h2>
     <?php endif; ?>
 
-    <?php 
+    <!-- <?php 
       $gallery = get_field('gallery');
       foreach($gallery as $image) {
         echo '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
@@ -32,7 +32,29 @@
           echo '<label for="' . $val . '">' . $label . '</label>';
         }
       }
-    ?>
+    ?> -->
+
+    <div class='random-div'>Diego was here!</div>
+    <style>
+      .random-div {
+        background-color: lightblue;
+        padding: 10px;
+        border: 2px;
+        border-color: black;
+        border-style: solid;
+        transform: translate(50px);
+        width: 300px;
+        height: 300px;
+        transition-duration: 1000ms;
+        transition-property: background-color, transform;
+      }
+
+      .random-div:hover {
+        background-color: lightcoral;
+        transform: rotate(45deg) scale(.5);
+      }
+    </style>
+
   </div>
 </section>
 
