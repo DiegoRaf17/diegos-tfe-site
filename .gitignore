@@ -1,0 +1,14 @@
+# ignore built-in wordpress themes
+/twenty*
+
+# ignore node dependency directories
+node_modules/
+
+# ignore log files and databases
+*.log
+*.logs
+*.sql
+*.sqlite
+
+# ignore misc files
+.DS_Store
