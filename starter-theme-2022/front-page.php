@@ -17,7 +17,7 @@
       <h2><?php echo $my_field; ?></h2>
     <?php endif; ?>
 
-    <!-- <?php 
+    <?php 
       $gallery = get_field('gallery');
       foreach($gallery as $image) {
         echo '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
@@ -32,8 +32,7 @@
           echo '<label for="' . $val . '">' . $label . '</label>';
         }
       }
-    ?> -->
-
+    ?>
   </div>
 </section>
 
