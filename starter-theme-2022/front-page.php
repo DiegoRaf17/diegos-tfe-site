@@ -10,14 +10,14 @@
   <div class="home-main-content">
    
     <?php get_template_part( 'partials/section-page' ); ?>
-    <h1>This is a Test pushing from local by flywheel</h1>
+    <h1>Setting up local site and connected to github repo</h1>
 
     <?php $my_field = get_field('my_text_fieild'); ?>
     <?php if ($my_field) : ?>
       <h2><?php echo $my_field; ?></h2>
     <?php endif; ?>
 
-    <?php 
+    <!-- <?php 
       $gallery = get_field('gallery');
       foreach($gallery as $image) {
         echo '<img src="' . $image['sizes']['thumbnail'] . '" alt="' . $image['alt'] . '" />';
@@ -32,7 +32,7 @@
           echo '<label for="' . $val . '">' . $label . '</label>';
         }
       }
-    ?>
+    ?> -->
 
   </div>
 </section>
